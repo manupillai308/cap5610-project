@@ -1,0 +1,5 @@
+python -u get_features.py --lr 0.0001 --dist-url 'tcp://localhost:10001' --multiprocessing-distributed --world-size 1 --rank 0  --epochs 100 --op sam --wd 0.03 --mining --cos --dim 1000 --asam --rho 2.5 -j 10 --city SanFrancisco --save_path ./result_cvact_fov270 --resume ./result_cvact_fov270/model_best.pth.tar --dataset cvact --fov 270 --evaluate --batch-size 128
+
+python -u get_features.py --lr 0.0001 --dist-url 'tcp://localhost:10001' --multiprocessing-distributed --world-size 1 --rank 0  --epochs 100 --op sam --wd 0.03 --mining --cos --dim 1000 --asam --rho 2.5 -j 10 --city SanFrancisco --save_path ./result_cvact_fov180 --resume ./result_cvact_fov180/model_best.pth.tar --dataset cvact --fov 180 --evaluate --batch-size 128
+
+python -u get_features.py --lr 0.0001 --dist-url 'tcp://localhost:10001' --multiprocessing-distributed --world-size 1 --rank 0  --epochs 100 --op sam --wd 0.03 --mining --cos --dim 1000 --asam --rho 2.5 -j 10 --city SanFrancisco --save_path ./result_cvact_fov90 --resume ./result_cvact_fov90/model_best.pth.tar --dataset cvact --fov 90 --evaluate --batch-size 128
